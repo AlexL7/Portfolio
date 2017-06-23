@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= title %></title>
+    <title>Projects</title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
   </head>
   <body>
@@ -10,8 +10,13 @@
 
 
     <div class "container">
-    <h1>Work</h1>
-    <p> Projects <p>
+    <h1>Projects</h1>
+    <p> Thumbnails of my projects<p>
+
+    <% for(var i=0; i<data.length; i++) { %>
+      <p><%= data[i].project_name %><p>
+      <% } %>
+
 
     </div>
   </body>
