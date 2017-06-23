@@ -5,9 +5,14 @@ var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
 var pg = require('pg');
+var ENV = process.env.ENV || "development";
+
+// require database
+var knexConfig = require("./knexfile");
+var knex       = require("knex")(knexConfig[ENV]);
 
 
-
+// require routes
 var index = require('./routes/index');
 var users = require('./routes/users');
 
