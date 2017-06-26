@@ -19,7 +19,7 @@ router.get('/projects', function(req, res, next){
 
   knex('projects')
   .then((results)=> {
-    let templateVars = {data:results};
+    let templateVars = {title: "Projects", data:results};
     console.log(results)
   res.render('projects', templateVars);
   }).catch((e) =>{
@@ -28,7 +28,7 @@ router.get('/projects', function(req, res, next){
 
 
 router.get('/about', function(req, res, next){
-  res.render('about', {title: 'Alexander Lock'})
+  res.render('about', {title: 'About Me'})
 });
 
 router.get('/contact', function(req, res, next){
