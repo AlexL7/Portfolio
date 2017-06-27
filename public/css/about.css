@@ -388,15 +388,58 @@ body {
   background-color: white;
 }
 
+.about_cont{
+  margin:auto;
+}
+.col-lg-offset-2{
+  margin-left: 9%;
+}
+.col-lg-8 {
+  width: 90%;
+}
 #about_me {
   color:black;
 }
+#profile{
+  float:left;
+  border: 10px solid black;
+  border-radius: 300px;
+  margin-right: 50px;
+}
+.mini_cont {
+  width:100%;
+  margin:auto;
+  padding:10px;
+}
+#me {
+  width:15%
+  float: left;
+  border-radius: 300px;
+}
+#me_info {
+  margin-left: 15%;
+  max-width: 100%
+}
+
+
+.code_info {
+  width:70%;
+  float: left;
+}
+.code_btns {
+  width: 100%;
+}
+.a_btns{
+  margin-top: 5%;
+}
+
 #code_jr {
   background-color: #F05F40;
 }
 #code_jr hr.light {
   border-color: white;
 }
+
 #code_jr p {
   color: white;
 }
@@ -404,5 +447,9 @@ body {
   background-color: white;
 }
 #contact p {
+  text-align: center;
+}
+
+#about_web {
   text-align: center;
 }
