@@ -385,9 +385,24 @@ img::-moz-selection {
 }
 body {
   webkit-tap-highlight-color: #222222;
-  background-color: black;
+  background-color: white;
 }
 
 #about_me {
   color:black;
+}
+#code_jr {
+  background-color: #F05F40;
+}
+#code_jr hr.light {
+  border-color: white;
+}
+#code_jr p {
+  color: white;
+}
+#contact {
+  background-color: white;
+}
+#contact p {
+  text-align: center;
 }
