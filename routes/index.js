@@ -13,10 +13,9 @@ router.get('/home', function(req, res, next){
   res.render('index', {title: 'Alexander Lock'})
 });
 
-router.get('/projects', function(req, res, next){
+router.get('/projects_1', function(req, res, next){
 
   let templateVars = {};
-
   knex('projects')
   .then((results)=> {
     let templateVars = {title: "Projects", data:results};
@@ -25,6 +24,25 @@ router.get('/projects', function(req, res, next){
   }).catch((e) =>{
     console.log(`Failed to get data from database: ${e}`)});
 });
+
+router.get('/projects_2', function(req, res, next){
+
+  let templateVars = {};
+  knex('projects')
+  .then((results)=> {
+    let templateVars = {title: "Projects", data:results};
+    console.log(results)
+  res.render('projects_2', templateVars);
+  }).catch((e) =>{
+    console.log(`Failed to get data from database: ${e}`)});
+});
+
+router.get('/javascript', function(req, res, next){
+  res.render('javascript', {title: 'Javascript'})
+});
+
+
+
 
 
 router.get('/about', function(req, res, next){
