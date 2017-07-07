@@ -38,8 +38,36 @@ router.get('/projects_2', function(req, res, next){
 });
 
 router.get('/javascript', function(req, res, next){
-  res.render('javascript', {title: 'Javascript'})
+  res.render('javascript', {title: 'Javascript 30'})
 });
+
+router.get('/python', function(req, res, next){
+  res.render('python', {title: 'Python Focus'})
+});
+
+router.get('/jungle', function(req, res, next){
+  res.render('jungle', {title: 'Jungle App: E-commerce'})
+});
+
+router.get('/face', function(req, res, next){
+  res.render('face', {title: 'Face Replace Final'})
+});
+
+router.get('/chatty', function(req, res, next){
+  res.render('chatty', {title: 'React: Chatty App'})
+});
+router.get('/tweeter', function(req, res, next){
+  res.render('tweeter', {title: 'Tweeter: Twitter Replica'})
+});
+
+router.get('/pickup', function(req, res, next){
+  res.render('pickup', {title: 'Food Pickup'})
+});
+
+router.get('/calculator', function(req, res, next){
+  res.render('calculator', {title: 'Calculator Test'})
+});
+
 
 
 
