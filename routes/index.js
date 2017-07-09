@@ -68,6 +68,22 @@ router.get('/calculator', function(req, res, next){
   res.render('calculator', {title: 'Calculator Test'})
 });
 
+router.get('/python_1', function(req, res, next){
+  res.render('python_1', {title: 'Python Focus'})
+});
+
+router.get('/javascript_1', function(req, res, next){
+  res.render('javascript_1', {title: 'Javascript 30'})
+});
+router.get('/javascript_2', function(req, res, next){
+  res.render('javascript_2', {title: 'Javascript 30'})
+});
+router.get('/javascript_3', function(req, res, next){
+  res.render('javascript_3', {title: 'Javascript 30'})
+});
+
+
+
 
 
 
