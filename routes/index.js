@@ -89,6 +89,10 @@ router.get('/about', function(req, res, next){
   res.render('about', {title: 'About Me'})
 });
 
+router.get('/progress', function(req, res, next){
+  res.render('progress', {title: 'Progress'})
+});
+
 
 return router;
 
