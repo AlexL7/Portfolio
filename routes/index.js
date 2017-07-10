@@ -15,26 +15,12 @@ router.get('/home', function(req, res, next){
 
 router.get('/projects_1', function(req, res, next){
 
-  let templateVars = {};
-  knex('projects')
-  .then((results)=> {
-    let templateVars = {title: "Projects", data:results};
-    console.log(results)
-  res.render('projects', templateVars);
-  }).catch((e) =>{
-    console.log(`Failed to get data from database: ${e}`)});
+  res.render('projects', {title: 'Projects'})
 });
 
 router.get('/projects_2', function(req, res, next){
 
-  let templateVars = {};
-  knex('projects')
-  .then((results)=> {
-    let templateVars = {title: "Projects", data:results};
-    console.log(results)
-  res.render('projects_2', templateVars);
-  }).catch((e) =>{
-    console.log(`Failed to get data from database: ${e}`)});
+  res.render('projects_2', {title: 'Projects'})
 });
 
 router.get('/javascript', function(req, res, next){
