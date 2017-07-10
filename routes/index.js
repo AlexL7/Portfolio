@@ -85,10 +85,6 @@ router.get('/javascript_3', function(req, res, next){
 
 
 
-
-
-
-
 router.get('/about', function(req, res, next){
   res.render('about', {title: 'About Me'})
 });
