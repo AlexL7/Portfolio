@@ -106,9 +106,7 @@ aside {
   background-color: transparent;
 }
 
-#nav_about {
-  color:#F05F40;
-}
+
 
 header {
   position: relative;
@@ -452,4 +450,7 @@ body {
 
 #about_web {
   text-align: center;
+}
+#error{
+  color:black;
 }
